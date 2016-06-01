@@ -1,0 +1,533 @@
+html, body {
+width:100%;
+height:100%;
+}
+
+body {
+margin:0;
+padding:0;
+border:0;
+background:#000000;
+}
+
+#log {
+margin-top:200px;
+padding:2%;
+display:inline-block;
+background:black;
+color:white;
+}
+
+#overlay {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+	 background-image:url(blackground.png);
+	 background-repeat:repeat;
+}
+
+#overlay div {
+     width:50%;
+     margin: 100px auto;
+     background-color: #000;
+     border:1px solid #fff;
+     padding:15px;
+     text-align:center;
+	 color:white;
+	 font-family: 'Courgette', serif;
+	 text-align:justify;
+	 -webkit-box-shadow: 3px 3px 8px #000;
+	 -moz-box-shadow: 3px 3px 8px #000;
+	 box-shadow: 3px 3px 8px #000;
+}
+
+#overlay input {
+color:white;
+}
+
+#overlay input:hover {
+color:#33FFBD;
+}
+
+.home {
+display:block;
+width:100%;
+height:100%;
+z-index:-9000;
+}
+
+.home a {
+text-decoration:none;
+color:white;
+}
+
+.menu {
+display:block;
+margin-left:auto;
+margin-right:auto;
+font-size:300%;
+color:#33FFBD;
+font-family: 'Jolly Lodger', sans-serif;
+text-shadow: 5px 5px 5px #000000;
+background:none;
+border:none;
+}
+
+.menu:hover {
+color:white;
+text-shadow: 0px 0px 20px #33FFBD;
+}
+
+.action {
+display:inline;
+margin-left:auto;
+margin-right:auto;
+font-size:300%;
+color:#000000;
+font-family: 'Jolly Lodger', sans-serif;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+.action:hover {
+color:white;
+}
+
+#actionland  a {
+display:inline;
+margin-left:auto;
+margin-right:auto;
+font-size:200%;
+color:#000000;
+font-family: 'Jolly Lodger', sans-serif;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+#actionland a:hover {
+color:white;
+}
+
+#actionland a:active {
+color:#33FFBD;
+}
+
+#dicemg {
+width:40px;
+}
+
+#diceland {
+width:130px;
+height:130px;
+line-height:130px;
+background-image:url(greenwool.jpg);
+-moz-box-shadow: inset 0 0 5px #000000;
+-webkit-box-shadow: inset 0 0 5px #000000;
+box-shadow: inset 0 0 5px #000000;
+}
+
+#diceland img {
+margin-left:auto;
+margin-right:auto;
+vertical-align:middle;
+}
+
+.buttony {
+background:none;
+border:none;
+color:black;
+font-family: 'Courgette', serif;
+font-size:15px;
+}
+
+.buttony:hover {
+color:white;
+}
+
+#dialog {
+display:block;
+color:white;
+background:black;
+font-family:Courier New, Courier, monospace;
+}
+
+#game {
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:90%;
+min-height:30%;
+color:white;
+text-align:center;
+background-repeat:repeat;
+-moz-box-shadow: inset 0 0 10px #000000;
+-webkit-box-shadow: inset 0 0 10px #000000;
+box-shadow: inset 0 0 10px #000000;
+}
+
+#profile {
+margin:1%;
+text-align:center;
+background:none;
+}
+
+#profile input {
+font-family:Courier New, Courier, monospace;
+font-size:17px;
+background:black;
+color:white;
+width:100%;
+border:1px solid white;
+}
+
+#profile input:hover {
+color:#33FFBD;
+}
+
+#profile img {
+border:5px double black;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#notebook {
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:5%;
+width:90%;
+min-height:50%;
+color:black;
+background-image:url(paper_pattern.jpg);
+background-repeat:repeat;
+}
+
+.notes {
+display:inline-block;
+padding:2%;
+font-family: 'Courgette', serif;
+font-size:15px;
+vertical-align:top;
+}
+
+.notes h4 {
+font-family: serif;
+font-size:18px;
+}
+
+#board_objects {
+margin:1%;
+text-align:left;
+color:black;
+border:5px double black;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+background-image:url(paper_pattern.jpg);
+}
+
+#board_objects h4 {
+font-family: 'Jolly Lodger', sans-serif;
+margin:0;
+font-size:32px;
+}
+
+#board_objects a {
+color:black;
+cursor:pointer;
+font-weight:normal;
+text-decoration:none;
+}
+
+
+#board {
+margin:1%;
+background-image:url(paper_pattern.jpg);
+border:5px double black;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#board img {
+width:80%;
+}
+
+#board h4 {
+margin:0;
+color:black;
+font-size:16px;
+font-family: 'Courgette', serif;
+background:white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 2px 2px 2px 2px black;
+-moz-box-shadow: 2px 2px 2px 2px black; 
+box-shadow: 2px 2px 2px 2px black; 
+}
+
+#select_characters {
+display:block;
+margin-left:auto;
+margin-right:auto;
+color:white;
+text-align:center;
+}
+
+#select_characters img {
+margin:2px;
+width:100px;
+-moz-box-shadow: 3px 3px 3px #000;
+-webkit-box-shadow: 3px 3px 3px #000;
+box-shadow: 3px 3px 3px #000;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#select_characters img:hover {
+transform:rotate(10deg);
+-moz-transform:rotate(10deg);
+-webkit-transform:rotate(10deg);
+-o-transform:rotate(10deg);
+transition: all 0.5s;
+-moz-transition: all 0.5s;
+-webkit-transition: all 0.5s;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label {
+    background:url(check_radio_sheet.png) -19px top no-repeat;
+}
+
+#historic {
+padding:1%;
+display:none;
+visibility:hidden;
+background:none;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+color:black;
+font-family: Courier New, Courier, monospace;
+border:1px dotted black;
+}
+
+#historic a {
+cursor:pointer;
+font-weight:bold;
+text-decoration:none;
+font-family:sans-serif;
+}
+
+#historic u {
+font-weight:bold;
+font-family:sans-serif;
+text-decoration:none;
+}
+
+#historic img {
+height:200px;
+border:1px solid white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 2px 2px 2px 2px #443F2B;
+-moz-box-shadow: 2px 2px 2px 2px #443F2B; 
+box-shadow: 2px 2px 2px 2px #443F2B; 
+margin:1%;
+}
+
+#character {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+	 background-image:url(blackground.png);
+	 background-repeat:repeat;
+	 padding:0;
+}
+
+#character div {
+margin: 100px auto;
+padding:1%;
+width:250px;
+color:black;
+background-image:url(paper_pattern.jpg);
+border:1px solid white;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+overflow:auto;
+}
+
+#character div img {
+border:5px double white;
+margin: 0px 0px 10px 0px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#character div p {
+padding:1%;
+text-align:justify;
+}
+
+#suggestion {
+display:none;
+visibility:hidden;
+margin-left:auto;
+margin-right:auto;
+padding:1%;
+color:black;
+font-family: 'Courgette', serif;
+}
+
+#suggestion p {
+display:inline-block;
+margin:2px;
+padding:5px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border:1px dashed white;
+cursor:pointer;
+}
+
+#suggestion p:hover {
+background-image:url(blackground.png);
+background-repeat:repeat;
+color:white;
+}
+
+#suggestion p:active {
+color:#33FFBD;
+border:1px solid #33FFBD;
+background:black;
+}
+
+#suggestion h4 {
+font-size:22px;
+}
+
+.yes {
+color:white;
+color:green;
+display:inline;
+font-weight:bold;
+font-family: Courier, monospace;
+font-size:16px;
+cursor:pointer;
+padding:5px;
+}
+
+.yes:hover {
+color:white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border:1px dashed white;
+padding:5px;
+}
+
+.no {
+color:red;
+display:inline;
+font-weight:bold;
+font-family: Courier, monospace;
+font-size:16px;
+cursor:pointer;
+padding:5px;
+}
+
+.no:hover {
+color:white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border:1px dashed white;
+padding:5px;
+}
+
+@media screen and (max-width: 294px) {
+	#logo {
+		width:100%;
+	}
+	
+	#notebook {
+		width:100%;
+		margin-bottom:0%;
+	}
+	
+	#dicemg {
+		width:30px;
+	}
+	
+	.notes {
+		padding:10%;
+		font-size:13px;
+	}
+	
+	#overlay div {
+		width:80%;
+	}
+	
+	#board {
+	margin:0;
+	}
+	
+	#board img {
+	width:90%;
+	}
+	
+	#game {
+		width:100%;
+	}
+	
+	.menu {
+		font-size:200%;
+	}
+	
+	#profile img {
+		width:90%;
+	}
+	
+	#historic {
+		font-size:14px;
+	}
+	
+	#character div {
+		width:99%;
+		padding:0%;
+	}
+	
+	#character div img {
+		max-width:90%;
+	}
+
+}
